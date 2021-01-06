@@ -86,7 +86,7 @@ public class TestController {
         return q;
     }
 
-    @RequestMapping("/config1")
+/*    @RequestMapping("/config1")
     public String testConfig1(){
         String qq = microServiceUrl.getOrderUrl();
 //        String qqq = microServiceUrl.getUserUrl();
@@ -95,7 +95,7 @@ public class TestController {
 //       logger.error(qqq);
 //        logger.error(qqqq);
         return "success";
-    }
+    }*/
 
 
 }
