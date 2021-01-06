@@ -91,7 +91,9 @@ public class TestController {
         String qq = microServiceUrl.getOrderUrl();
         String qqq = microServiceUrl.getUserUrl();
         String qqqq = microServiceUrl.getShoppingUrl();
-        logger.error(qq); logger.error(qqq); logger.error(qqqq);
+        logger.error(qq);
+        logger.error(qqq);
+        logger.error(qqqq);
         return "ess";
     }
 
