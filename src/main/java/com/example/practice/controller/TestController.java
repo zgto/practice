@@ -89,11 +89,11 @@ public class TestController {
     @RequestMapping("/config1")
     public String testConfig1(){
         String qq = microServiceUrl.getOrderUrl();
-        String qqq = microServiceUrl.getUserUrl();
-        String qqqq = microServiceUrl.getShoppingUrl();
+//        String qqq = microServiceUrl.getUserUrl();
+//        String qqqq = microServiceUrl.getShoppingUrl();
         logger.error(qq);
-        logger.error(qqq);
-        logger.error(qqqq);
+//       logger.error(qqq);
+//        logger.error(qqqq);
         return "ess";
     }
 
