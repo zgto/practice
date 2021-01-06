@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>博主信息</title>
+</head>
+<body>
+
+<!--处理单个对象，用th：object="${}"获取对象信息-->
+<!--<form action="" th:object="${blogger}">
+    用户编号：<input name="id" th:value="${blogger.id}"><br>
+    用户姓名：<input type="text" name="username" th:value="${blogger.getUsername}"><br>
+    登录密码：<input type="text" name="password" th:value="*{password}">
+</form>-->
+
+<!--处理List，用th:each进行遍历-->
+<form action="" th:each="blogger : ${list}">
+    用户编号：<input name="id" th:value="${blogger.id}"><br>
+    用户姓名：<input name="username" th:value="${blogger.getUsername()}"><br>
+    登录密码：<input name="password" th:value="${blogger.getPassword()}">
+</form>
+
+</body>
+</html>
