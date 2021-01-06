@@ -1,12 +1,13 @@
 package com.example.practice.controller;
 
+import com.example.practice.entity.User;
 import com.example.practice.service.UserService;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.example.practice.entity.User;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * @author zhangtao
@@ -20,7 +21,7 @@ public class UserTestController {
     @Resource
     private UserService userService;
 
-    /*@RequestMapping("/getUser/{id}")
+    @RequestMapping("/getUser/{id}")
     public User getUser(@PathVariable Long id) {
         return userService.getUser(id);
     }
@@ -33,7 +34,7 @@ public class UserTestController {
     @RequestMapping("/getall")
     public List<User> getAll() {
         return userService.getAll();
-    }*/
+    }
 
     @RequestMapping("/getUserByName/{name}")
     public User getUserByName(@PathVariable String name) {
